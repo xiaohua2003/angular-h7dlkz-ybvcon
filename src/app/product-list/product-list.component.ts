@@ -9,9 +9,13 @@ import { products } from '../products';
 })
 export class ProductListComponent {
   products = products;
-
+  price:any
   share() {
     window.alert('The product has been shared!');
+  }
+  priceAlert(value:any){
+    this.price=value
+   window.alert(`the price of this item is ${value}`)
   }
 }
 
